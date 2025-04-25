@@ -32,7 +32,7 @@ const Navbar = () => {
       initial="initial"
       animate="animate"
       variants={fadeIn}
-      className={`fixed w-full z-50 transition-all duration-300 ${
+      className={`fixed w-full z-51 transition-all duration-300 ${
         scrolled ? "py-3 bg-white/90 dark:bg-dark/95 shadow-lg backdrop-blur-xs" : "py-5"
       }`}
     >

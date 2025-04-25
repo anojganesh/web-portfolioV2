@@ -11,7 +11,7 @@ const Experience = () => {
       variants={staggerContainer}
       initial="initial"
       animate="animate"
-      className="section bg-light dark:bg-dark/80"
+      className="section scroll-mt-20 bg-light dark:bg-dark/80"
       id="experience"
     >
       <div className="container">
@@ -19,7 +19,7 @@ const Experience = () => {
           Experience & Education
         </motion.h2>
 
-        <div className="flex md:flex-row gap-8">
+        <div className="flex flex-col md:flex-row gap-8">
           <motion.div variants={fadeIn} className="md:w-1/2">
             <h3 className="text-2xl font-semibold mb-6 text-center md:text-left">
               Experience
@@ -31,8 +31,8 @@ const Experience = () => {
                   className="bg-white dark:bg-dark p-6 rounded-lg shadow-md"
                 >
                   <div className="flex justify-between items-start mb-2">
-                    <h4 className="text-xl font-semibold">{exp.role}</h4>
-                    <span className="bg-primary/10 text-primary px-3 py-1 rounded-full text-sm">
+                    <h4 className="text-xl font-semibold max-w-[70%]">{exp.role}</h4>
+                    <span className="bg-primary/10 text-primary px-3 py-1 rounded-2xl text-sm">
                       {exp.duration}
                     </span>
                   </div>
@@ -61,8 +61,8 @@ const Experience = () => {
                   className="bg-white dark:bg-dark p-6 rounded-lg shadow-md"
                 >
                   <div className="flex justify-between items-start mb-2">
-                    <h4 className="text-xl font-semibold">{edu.degree}</h4>
-                    <span className="bg-primary/10 text-primary px-3 py-1 rounded-full text-sm">
+                    <h4 className="text-xl font-semibold max-w-[60%]">{edu.degree}</h4>
+                    <span className="bg-primary/10 text-primary px-3 py-1 rounded-2xl text-sm">
                       {edu.duration}
                     </span>
                   </div>
