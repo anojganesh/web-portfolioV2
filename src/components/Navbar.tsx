@@ -24,8 +24,10 @@ const Navbar = () => {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
-
+  
   return (
+
+    
     <motion.nav
       initial="initial"
       animate="animate"
@@ -65,7 +67,7 @@ const Navbar = () => {
             >
               Contact
             </Link>
-            
+            <ThemeToggle/>
             
           </div>
 
@@ -74,9 +76,9 @@ const Navbar = () => {
   <section className="MOBILE-MENU flex items-center gap-4 md:hidden">
   <ThemeToggle/>
     <div className="HAMBURGER-ICON space-y-2" onClick={() => setIsNavOpen(prev => !prev)}>
-      <span className="block h-0.5 w-8 animate-pulse bg-gray-600 dark:bg-gray-300"></span>
-      <span className="block h-0.5 w-8 animate-pulse bg-gray-600 dark:bg-gray-300"></span>
-      <span className="block h-0.5 w-8 animate-pulse bg-gray-600 dark:bg-gray-300"></span>
+      <span className="block h-0.5 w-8 animate-pulse bg-gray-400 dark:bg-gray-300"></span>
+      <span className="block h-0.5 w-8 animate-pulse bg-gray-400 dark:bg-gray-300"></span>
+      <span className="block h-0.5 w-8 animate-pulse bg-gray-400 dark:bg-gray-300"></span>
     </div>
 
     <div className={isNavOpen ? " bg-black bg-gradient-to-br from-primary/20 to-secondary/30 showMenuNav" : "hideMenuNav"}>
@@ -85,7 +87,7 @@ const Navbar = () => {
               onClick={() => setIsNavOpen(false)}
             >
               <svg
-                className="h-8 w-8 text-gray-600"
+                className="h-8 w-8 animate-pulse color-gray-500 dark:color-gray-400"
                 viewBox="0 0 24 24"
                 fill="none"
                 stroke="currentColor"

@@ -19,7 +19,7 @@ const Experience = () => {
           Experience & Education
         </motion.h2>
 
-        <div className="flex flex-col md:flex-row gap-8">
+        <div className="flex md:flex-row gap-8">
           <motion.div variants={fadeIn} className="md:w-1/2">
             <h3 className="text-2xl font-semibold mb-6 text-center md:text-left">
               Experience

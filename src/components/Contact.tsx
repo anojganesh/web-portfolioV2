@@ -91,7 +91,7 @@ const Contact = () => {
             className="mt-8 flex flex-wrap justify-center gap-6"
           >
             <a
-              href="mailto:your.email@example.com"
+              href="mailto:anojganesh@gmail.com"
               className="flex items-center gap-2 text-dark dark:text-light hover:text-primary transition-colors"
             >
               <svg
@@ -108,11 +108,11 @@ const Contact = () => {
                 <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
                 <polyline points="22,6 12,13 2,6"></polyline>
               </svg>
-              anojganesh@example.com
+              anojganesh@gmail.com
             </a>
 
             <a
-              href="https://linkedin.com/in/yourprofile"
+              href="https://linkedin.com/in/anojganesh"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-2 text-dark dark:text-light hover:text-primary transition-colors"
@@ -136,7 +136,7 @@ const Contact = () => {
             </a>
 
             <a
-              href="https://github.com/yourusername"
+              href="https://github.com/anojganesh"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-2 text-dark dark:text-light hover:text-primary transition-colors"
