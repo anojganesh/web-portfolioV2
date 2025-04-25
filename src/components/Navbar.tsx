@@ -7,7 +7,10 @@ import { fadeIn } from "../utils/animations";
 import { ThemeToggle } from './ThemeToggle';
 
 const Navbar = () => {
+
+
   const [scrolled, setScrolled] = useState(false);
+  const [isNavOpen, setIsNavOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -32,8 +35,8 @@ const Navbar = () => {
       }`}
     >
       <div className="container mx-auto">
-        <div className="flex justify-between items-center">
-          <Link href="/" className="text-2xl ml-5 font-bold text-primary">
+        <div className="flex justify-between items-center ml-5 mr-5">
+          <Link href="/" className="text-2xl font-bold text-primary">
             Anoj Ganesh
           </Link>
 
@@ -62,26 +65,76 @@ const Navbar = () => {
             >
               Contact
             </Link>
-            <ThemeToggle/>
+            
+            
           </div>
 
-          <button className="md:hidden">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="h-6 w-6"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
+
+  
+  <section className="MOBILE-MENU flex items-center gap-4 md:hidden">
+  <ThemeToggle/>
+    <div className="HAMBURGER-ICON space-y-2" onClick={() => setIsNavOpen(prev => !prev)}>
+      <span className="block h-0.5 w-8 animate-pulse bg-gray-600 dark:bg-gray-300"></span>
+      <span className="block h-0.5 w-8 animate-pulse bg-gray-600 dark:bg-gray-300"></span>
+      <span className="block h-0.5 w-8 animate-pulse bg-gray-600 dark:bg-gray-300"></span>
+    </div>
+
+    <div className={isNavOpen ? " bg-black bg-gradient-to-br from-primary/20 to-secondary/30 showMenuNav" : "hideMenuNav"}>
+            <div
+              className="absolute top-0 right-0 px-8 py-8"
+              onClick={() => setIsNavOpen(false)}
             >
-              <path
+              <svg
+                className="h-8 w-8 text-gray-600"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
                 strokeLinecap="round"
                 strokeLinejoin="round"
-                strokeWidth={2}
-                d="M4 6h16M4 12h16M4 18h16"
-              />
-            </svg>
-          </button>
+              >
+                <line x1="18" y1="6" x2="6" y2="18" />
+                <line x1="6" y1="6" x2="18" y2="18" />
+              </svg>
+            </div>
+            <ul className="flex flex-col items-center justify-between min-h-[250px]">
+              <li className="border-b border-gray-400 my-8 uppercase">
+                <a href="#about" onClick={() => setIsNavOpen(false)} className="text-dark dark:text-light hover:text-primary transition-colors">About</a>
+              </li>
+              <li className="border-b border-gray-400 my-8 uppercase">
+                <a href="#experience" onClick={() => setIsNavOpen(false)} className="text-dark dark:text-light hover:text-primary transition-colors">Experience</a>
+              </li>
+              <li className="border-b border-gray-400 my-8 uppercase">
+                <a href="#projects" onClick={() => setIsNavOpen(false)} className="text-dark dark:text-light hover:text-primary transition-colors">Projects</a>
+              </li>
+              <li className="border-b border-gray-400 my-8 uppercase">
+                <a href="#contact" onClick={() => setIsNavOpen(false)} className="text-dark dark:text-light hover:text-primary transition-colors">Contact</a>
+              </li>
+
+            </ul>
+          </div>
+        </section>
         </div>
+        
+        {/* Convert to tailwind eventually*/}
+        <style>{` 
+      .hideMenuNav {
+        display: none;
+      }
+      .showMenuNav {
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        z-index: 10;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+      }
+    `}</style>
       </div>
     </motion.nav>
   );

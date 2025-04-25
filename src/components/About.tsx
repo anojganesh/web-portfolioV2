@@ -9,7 +9,7 @@ const About = () => {
       variants={staggerContainer}
       initial="initial"
       animate="animate"
-      className="section bg-white dark:bg-dark md:w-1/2"
+      className="section bg-white dark:bg-dark md:w-1/2 bg-gradient-to-br from-pimary/30 to-secondary/5"
       id="about"
     >
       <div className="container">

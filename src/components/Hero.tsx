@@ -5,6 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 const Hero = () => {
+  
   return (
     <motion.section
       variants={staggerContainer}
@@ -30,6 +31,7 @@ const Hero = () => {
             <motion.div
             variants={fadeIn}
             className="md:w-1/2 flex justify-center md:hidden pb-8 pt-2"
+            whileHover={{ scale: 1.05 }}
             >
               <div className="relative w-64 h-64 md:w-80 md:h-80 bg-black rounded-full overflow-hidden border-2 border-primary shadow-lg">
                 <Image
@@ -73,6 +75,7 @@ const Hero = () => {
           <motion.div
             variants={fadeIn}
             className="md:w-1/2 flex justify-center hidden md:flex"
+            whileHover={{ scale: 1.05 }}
           >
             <div className="relative w-64 h-64 md:w-80 md:h-80 bg-black rounded-full overflow-hidden border-2 border-primary shadow-lg">
               <Image

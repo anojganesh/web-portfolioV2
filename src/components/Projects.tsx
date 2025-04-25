@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 import { fadeIn, staggerContainer } from "../utils/animations";
 import { projectsData } from "../constants/projects";
-import Image from "next/image";
+import Image from "next/image"; //change image to gif/video in future iteration
 import Link from "next/link";
 
 const Projects = () => {
