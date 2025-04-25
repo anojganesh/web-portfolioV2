@@ -23,8 +23,8 @@ const Contact = () => {
             className="bg-white dark:bg-dark p-8 rounded-lg shadow-md"
           >
             <p className="text-center mb-8">
-              I'm currently looking for internship opportunities. Whether you
-              have a question or just want to say hi, I'll do my best to get back
+              I&apos;m currently looking for internship opportunities. Whether you
+              have a question or just want to say hi, I&apos;ll do my best to get back
               to you!
             </p>
 

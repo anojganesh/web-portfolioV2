@@ -21,7 +21,7 @@ const Hero = () => {
             className="md:w-1/2 text-center md:text-left"
           >
             <h1 className="text-4xl md:text-6xl font-bold mb-4">
-              Hi, I'm <span className="text-primary">Anoj</span>
+              Hi, I&apos;m <span className="text-primary">Anoj</span>
             </h1>
             <h2 className="text-2xl md:text-3xl font-semibold mb-6">
               Aspiring Developer
@@ -48,7 +48,7 @@ const Hero = () => {
 
 
             <p className="text-lg mb-8 max-w-lg">
-              I'm passionate about building exceptional digital experiences.
+              I&apos;m passionate about building exceptional digital experiences.
               Currently seeking internship opportunities to grow my skills and
               contribute to meaningful projects.
             </p>

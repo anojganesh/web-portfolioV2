@@ -24,7 +24,7 @@ import {
   SiCss3,
   SiFlask
 } from "react-icons/si";
-import {FaJava, FaCode, FaServer, FaDatabase, FaTools, FaPalette, FaUser} from "react-icons/fa";
+import {FaJava, FaCode, FaServer, FaDatabase, FaTools, FaPalette /*, FaUser*/} from "react-icons/fa";
 import { BiLogoVisualStudio } from "react-icons/bi";
 
 const About = () => {
@@ -104,7 +104,7 @@ const About = () => {
   
   <div className="space-y-4 text-gray-700 dark:text-gray-300">
     <p>
-      I'm <span className="text-primary font-medium">Anoj</span>, a passionate full-stack developer based in Toronto, 
+      I&apos;m <span className="text-primary font-medium">Anoj</span>, a passionate full-stack developer based in Toronto, 
       specializing in modern web technologies. My toolkit includes:
     </p>
     
@@ -145,14 +145,14 @@ const About = () => {
       <p className="font-medium mb-2">🔍 Currently seeking:</p>
       <p>
         Exciting opportunities where I can leverage my skills while growing 
-        alongside talented teams. If you're looking for a <span className="text-primary font-medium">quick-learning, 
+        alongside talented teams. If you&apos;re looking for a <span className="text-primary font-medium">quick-learning, 
         adaptable developer</span> who brings both technical skills and enthusiasm 
-        to the table, let's connect!
+        to the table, let&apos;s connect!
       </p>
     </div>
 
     <p className="text-sm italic">
-    "P.S. Want to see what I've built? Check out my GitHub @anojganesh and DM me your thoughts! ✨"
+    &apos;&quot;P.S. Want to see what I&apos;ve built? Check out my GitHub @anojganesh and DM me your thoughts! ✨&quot;
     </p>
   </div>
 </motion.div>
@@ -165,7 +165,8 @@ const About = () => {
             {/*<h3 className="text-xl font-semibold mb-6">My Skills</h3>*/}
             
             <div className="space-y-6">
-              {Object.entries(skills).map(([category, {icon, items}]) => (
+              {/* chose to remove icons from map*/}
+              {Object.entries(skills).map(([category, {items}]) => (
                 <div key={category}>
                   <h4 className="text-lg font-medium mb-3 text-primary dark:text-primary-light flex items-center gap-2">
                     {/*icon*/}
