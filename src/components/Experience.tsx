@@ -41,7 +41,7 @@ const Experience = () => {
         <div className="flex items-center gap-2 text-sm text-gray-600 dark:text-gray-100 mb-4">
           <span>3.7 GPA</span>
           <span>•</span>
-          <span>Dean's List</span>
+          <span>Dean&apos;s List</span>
           <span>•</span>
           <span>Toronto, ON</span>
         </div>
