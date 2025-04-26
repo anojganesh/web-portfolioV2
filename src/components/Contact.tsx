@@ -9,7 +9,7 @@ const Contact = () => {
       variants={staggerContainer}
       initial="initial"
       animate="animate"
-      className="section scroll-mt-20 bg-light dark:bg-dark/80"
+      className="section scroll-mt-20 bg-light dark:bg-dark/80 bg-gradient-to-br from-primary/5 to-secondary/20"
       id="contact"
     >
       <div className="container">

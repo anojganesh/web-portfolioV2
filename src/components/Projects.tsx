@@ -12,7 +12,7 @@ const Projects = () => {
       variants={staggerContainer}
       initial="initial"
       animate="animate"
-      className="section scroll-mt-20 bg-white dark:bg-dark"
+      className="section scroll-mt-20 bg-white dark:bg-dark bg-gradient-to-bl from-secondary/20 to-primary/5"
       id="projects"
     >
       <div className="container">
