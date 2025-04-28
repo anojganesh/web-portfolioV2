@@ -95,7 +95,7 @@ const About = () => {
           {/* About Me Text */}
           <motion.div
   variants={fadeIn}
-  className="md:w-1/2 bg-light dark:bg-dark/50 p-6 rounded-lg shadow-md"
+  className="md:w-1/2 bg-light dark:bg-dark/90 p-6 rounded-lg shadow-md"
 >
   <h3 className="text-xl font-semibold mb-4 flex items-center gap-2">
     {/*<FaUser className="text-primary" />*/}
@@ -160,7 +160,7 @@ const About = () => {
           {/* Skills Section with Icons */}
           <motion.div 
             variants={fadeIn}
-            className="md:w-1/2 bg-light dark:bg-dark/50 p-6 rounded-lg shadow-md"
+            className="md:w-1/2 bg-light dark:bg-dark/90 p-6 rounded-lg shadow-md"
           >
             {/*<h3 className="text-xl font-semibold mb-6">My Skills</h3>*/}
             

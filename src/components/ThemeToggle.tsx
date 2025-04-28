@@ -12,6 +12,7 @@ export function ThemeToggle() {
       onClick={toggleTheme}
       className="rounded-full hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors"
       aria-label="Toggle theme"
+      title="Not available yet, stay tuned!"
     >
       {theme === 'light' ? (
         <Moon className="h-5 w-10 stroke-blue-300" />

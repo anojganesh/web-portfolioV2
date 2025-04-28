@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 import { fadeIn, staggerContainer } from "../utils/animations";
 import { projectsData } from "../constants/projects";
-import Image from "next/image"; //change image to gif/video in future iteration
+import Image from "next/image";
 import Link from "next/link";
 
 const Projects = () => {
@@ -25,10 +25,10 @@ const Projects = () => {
             <motion.div
               variants={fadeIn}
               key={project.id}
-              className="bg-light dark:bg-dark/50 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow"
+              className="bg-light dark:bg-dark/90 rounded-lg shadow-lg hover:shadow-xl transition-shadow relative" // Added relative here
               whileHover={{ y: -5 }}
             >
-              <div className="h-48 relative">
+              <div className="h-48 relative overflow-hidden rounded-t-lg">
                 <Image
                   src={project.image}
                   alt={project.title}
@@ -74,7 +74,7 @@ const Projects = () => {
                       Code
                     </Link>
                   )}
-                  {project.liveUrl && (
+                  {project.liveUrl ? (
                     <Link
                       href={project.liveUrl}
                       target="_blank"
@@ -97,6 +97,31 @@ const Projects = () => {
                       </svg>
                       Live Demo
                     </Link>
+                  ) : (
+                    <span
+                      className="text-sm flex items-center gap-1 text-gray-400 dark:text-gray-500 cursor-not-allowed relative group"
+                      title="Not available yet, stay tuned!"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        strokeWidth="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      >
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <line x1="2" y1="12" x2="22" y2="12"></line>
+                        <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                      </svg>
+                      Live Demo
+                      <span className="absolute -bottom-8 left-1/2 transform -translate-x-1/2 bg-gray-700 text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap">
+                        Not available yet, stay tuned!
+                      </span>
+                    </span>
                   )}
                 </div>
               </div>

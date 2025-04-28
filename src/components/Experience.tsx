@@ -25,7 +25,7 @@ const Experience = () => {
   <h3 className=" text-2xl font-semibold mb-6 text-center lg:text-left">
     Education
   </h3>
-  <div className=" sticky top-24 space-y-8">
+  <div className=" sticky top-[25%] space-y-8">
     {educationData.map((edu) => (
       <div
         key={edu.id}
@@ -33,7 +33,7 @@ const Experience = () => {
       >
         <div className="flex flex-col sm:flex-row justify-between gap-2 mb-2">
           <h4 className="text-xl font-semibold">B.Sc. Computer Science (Honours, Co-Op)</h4>
-          <span className="bg-primary/10 text-primary px-2 py-1 -ml-1 my-2 rounded-4xl text-sm self-start sm:self-center md:p-3 md:-mx-0 md:my-0">
+          <span className="bg-primary/10 text-primary px-2 py-1 -ml-1 my-2 rounded-4xl text-sm self-start sm:self-center lg:p-3 lg:w-47">
             Sept 2022 - May 2027 (Expected)
           </span>
         </div>
@@ -41,7 +41,7 @@ const Experience = () => {
         <div className="flex items-center gap-2 text-sm text-gray-600 dark:text-gray-100 mb-4">
           <span>3.7 GPA</span>
           <span>•</span>
-          <span>Dean&apos;s List</span>
+          <span>Dean&apos;s List </span>
           <span>•</span>
           <span>Toronto, ON</span>
         </div>
