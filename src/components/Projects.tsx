@@ -25,10 +25,10 @@ const Projects = () => {
             <motion.div
               variants={fadeIn}
               key={project.id}
-              className="bg-light dark:bg-dark/90 rounded-lg shadow-lg hover:shadow-xl transition-shadow relative" // Added relative here
+              className="bg-light dark:bg-dark/90 h-fit rounded-lg shadow-lg hover:shadow-xl transition-shadow relative" // Added relative here
               whileHover={{ y: -5 }}
             >
-              <div className="h-48 relative overflow-hidden rounded-t-lg">
+              <div className="h-68 relative overflow-hidden rounded-t-lg">
                 <Image
                   src={project.image}
                   alt={project.title}

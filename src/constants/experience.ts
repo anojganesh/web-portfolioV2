@@ -7,9 +7,11 @@ export const experienceData: Experience[] = [
     company: "WebBites",
     duration: "Fall 2024 - Present",
     description: [
-      "Developed responsive web applications using React and TypeScript",
-      "Collaborated with senior developers to implement new features",
-      "Participated in code reviews and agile development processes",
+      "Developed responsive web applications using React (Next.js) and TypeScript for small businesses and individuals.",
+      "Implemented modern stacks (Next.js, Node.js, Tailwind) to build real-world applications",
+      "Managed full project lifecycle: client consultation, design mockups, development, and deployment",
+      "Used Lighthouse metrics to guide performance and SEO optimizations"
+
     ],
   },
   {
