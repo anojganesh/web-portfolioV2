@@ -9,13 +9,13 @@ export const projectsData: Project[] = [
     technologies: ["React", "Node.js", "MySQL", "Bootstrap"],
     githubUrl: "https://github.com/anojganesh/EcoCatch",
     /*liveUrl: "https://app.com",*/
-    image: "/images/Countoure_demo.png",
+    image: "/images/EcoCatch.png",
   },
   {
     id: 2,
     title: "E-commerce Platform",
     description:
-      "A full-stack e-commerce application with user authentication, product catalog, and checkout system.",
+      "A modern full-stack e-commerce application with user authentication, product catalog, and checkout system.",
     technologies: ["Next.js", "Node.js", "MongoDB", "Tailwind CSS"],
     githubUrl: "https://github.com/anojganesh/Web-Apps/tree/main/Louvre-Modern_Clothing_Brand",
     /*liveUrl: "https://app.com",*/
